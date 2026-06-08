@@ -11,7 +11,7 @@ def main():
     resolver = DNS_Whisperer(args.domain, args.record)
     resolver.lookup() 
 
-    if not args.domain or args.record:
+    if not args.domain or not args.record:
         parser.print_help()
         return
 
